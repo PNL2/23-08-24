@@ -1,0 +1,32 @@
+#checkbox {
+    display: none;
+}
+
+.content>p {
+    background-color: #ebe8e8;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+.content {
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    left: -350px;
+    transition: all 2s ease-in;
+    border-radius: 0px 10px 10px 0px;
+}
+
+p{
+        display: block;
+        margin: 10px;
+        border: 2px solid aqua;
+        color: rgb(140, 173, 100);
+        padding: 10px;
+        border-radius: 10px;
+}
+#checkbox:checked +.content{
+    transform: translateX(450px) translateY(0px);
+}
